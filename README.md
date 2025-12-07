@@ -1,6 +1,6 @@
 # Bot Trade
 
-Crypto Trading Bot sử dụng thư viện Freqtrade.
+Crypto Trading Bot using Freqtrade library.
 
 ## Quick Start
 
@@ -8,14 +8,14 @@ Crypto Trading Bot sử dụng thư viện Freqtrade.
 # 1. Setup
 uv sync
 
-# 2. Tạo config
+# 2. Create config
 cp config/config.json.example config/config.json
 
-# 3. Chạy bot
-uv run freqtrade trade --config config/config.json --strategy MyStrategy
+# 3. Run bot
+uv run freqtrade trade --config config/config.json --strategy MA50_200_Strategy
 ```
 
-## Cấu trúc Project
+## Project Structure
 
 ```
 bot-trade/
@@ -26,16 +26,3 @@ bot-trade/
 ├── user_data/           # Runtime data (logs, results, market data)
 └── tests/               # Tests
 ```
-
-## Requirements
-
-- Python >= 3.11
-- [uv](https://github.com/astral-sh/uv) package manager
-
-## Documentation
-
-Xem [CLAUDE.md](CLAUDE.md) để biết cách sử dụng chi tiết.
-
-## License
-
-MIT

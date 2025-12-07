@@ -31,8 +31,9 @@ dev = [
 # Dependencies sẽ được quản lý bằng uv
 # Sử dụng: uv add <package> hoặc uv add --dev <package>
 
-[tool.setuptools.packages.find]
-where = ["src"]
+# Không cần package find vì không export package nào
+# [tool.setuptools.packages.find]
+# where = ["src"]
 
 [tool.black]
 line-length = 100
